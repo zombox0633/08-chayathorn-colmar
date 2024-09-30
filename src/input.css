@@ -27,8 +27,12 @@
     @apply text-2xl;
   }
 
+  span {
+    @apply text-2xl;
+  }
+
   a {
-    @apply text-2xl hover:text-[#4A90E2];;
+    @apply text-2xl hover:text-[#4A90E2];
   }
 
   img {
@@ -40,7 +44,7 @@
   }
 
   section {
-    @apply p-8;
+    @apply px-6 py-8;
   }
 }
 
@@ -50,7 +54,7 @@
   }
 
   #section2-container img {
-    @apply w-[35%];
+    @apply w-[35%] h-auto;
   }
 
   #section2-container div {
@@ -59,5 +63,31 @@
 
   #section2-container a {
     @apply text-[#4A90E2];
+  }
+
+  .section3__content-grid {
+    @apply bg-white hover:bg-timber_wolf;
+  }
+
+  .section3__content-grid img {
+    @apply w-full h-auto;
+  }
+
+  .section3__content-grid div {
+    @apply flex flex-col gap-y-2 px-4 pt-4 pb-6;
+  }
+
+  .section3__content-grid span,
+  .section3__content-grid p {
+    @apply text-battleship_gray;
+  }
+
+  #section4 p {
+    @apply text-battleship_gray;
+  }
+
+  footer p,
+  footer span {
+    @apply font-light text-battleship_gray;
   }
 }

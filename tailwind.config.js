@@ -8,6 +8,7 @@ module.exports = {
       },
       colors: {
         anti_flash_white: "#F3F5F5",
+        anti_flash_white2: "#EAEBEC",
         timber_wolf: "#D8D8D8",
         battleship_gray: "#9B9B9B",
         davy_gray: "#4A4A4A",

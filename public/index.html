@@ -38,7 +38,7 @@
           <button type="button">Start here</button>
         </div>
       </section>
-      <section class="h-full flex justify-between gap-x-6">
+      <section class="bg-anti_flash_white h-full flex justify-between gap-x-6">
         <div class="w-[60%] flex flex-col justify-between">
           <div class="flex flex-col justify-between gap-8">
             <img src="./images/information-main.jpg" alt="banner" />
@@ -92,53 +92,79 @@
           </article>
         </div>
       </section>
-      <section>
+      <section
+        class="bg-anti_flash_white2 flex flex-col items-center flex-wrap gap-y-8"
+      >
         <h1>Start learning</h1>
-        <div>
-          <div>
-            <img src="./images/course-software.jpg" alt="course-software">
-            <h2>Software engineering</h2>
-            <span>COURSES</span>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
-          </div>
-          <div>
-            <img src="./images/course-computer-art.jpg" alt="course-software">
-            <h2>Computer art</h2>
-            <span>COURSES</span>
-            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-          </div>
-          <div>
-            <img src="./images/course-design.jpg" alt="course-software">
-            <h2>Design</h2>
-            <span>COURSES</span>
-            <p>User Experience Design, User Research, Visual Design</p>
-          </div>
-          <div>
-            <img src="./images/course-data.jpg" alt="course-software">
-            <h2>Data</h2>
-            <span>COURSES</span>
-            <p>Data Science, Big Data, SQL, Data Visualization</p>
-          </div>
-          <div>
-            <img src="./images/course-business.jpg" alt="course-software">
-            <h2>Business</h2>
-            <span>COURSES</span>
-            <p>Product Development, Business Development, Startup</p>
-          </div>
-          <div>
-            <img src="./images/course-marketing.jpg" alt="course-software">
-            <h2>Marketing</h2>
-            <span>COURSES</span>
-            <p>Analytics, Content Marketing, Mobile Marketing</p>
-          </div>
-        </div>
-      </section>
-      <!-- <section>
-        <h1>Thesis Exhibit</h1>
-        <div>
-          <div>
+        <article class="grid grid-cols-3 gap-8 mx-12">
+          <div class="section3__content-grid">
+            <img src="./images/course-software.jpg" alt="course-software" />
             <div>
-              <h2>Reimagine Urban</h2>
+              <h2>Software engineering</h2>
+              <span>COURSES</span>
+              <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+          </div>
+          <div class="section3__content-grid">
+            <img src="./images/course-computer-art.jpg" alt="course-software" />
+            <div>
+              <h2>Computer art</h2>
+              <span>COURSES</span>
+              <p>
+                Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+                Computer Animation
+              </p>
+            </div>
+          </div>
+          <div class="section3__content-grid">
+            <img src="./images/course-design.jpg" alt="course-software" />
+            <div>
+              <h2>Design</h2>
+              <span>COURSES</span>
+              <p>User Experience Design, User Research, Visual Design</p>
+            </div>
+          </div>
+          <div class="section3__content-grid">
+            <img src="./images/course-data.jpg" alt="course-software" />
+            <div>
+              <h2>Data</h2>
+              <span>COURSES</span>
+              <p>Data Science, Big Data, SQL, Data Visualization</p>
+            </div>
+          </div>
+          <div class="section3__content-grid">
+            <img src="./images/course-business.jpg" alt="course-software" />
+            <div>
+              <h2>Business</h2>
+              <span>COURSES</span>
+              <p>Product Development, Business Development, Startup</p>
+            </div>
+          </div>
+          <div class="section3__content-grid">
+            <img src="./images/course-marketing.jpg" alt="course-software" />
+            <div>
+              <h2>Marketing</h2>
+              <span>COURSES</span>
+              <p>Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section
+        id="section4"
+        class="bg-anti_flash_white flex flex-col items-center flex-wrap gap-y-8"
+      >
+        <h1>Thesis Exhibit</h1>
+        <div class="flex justify-between gap-x-6">
+          <div class="w-[60%] flex flex-col justify-between gap-y-6">
+            <video controls>
+              <source src="./videos/thesis.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div>
+              <div class="mb-2">
+                <h2>Reimagine Urban</h2>
+              </div>
               <p>
                 "Curabitur vitae libero in ipusm porttitor consequat. Aliquam et
                 commodo lectus, nec consequat neque. Sed non accumsan urna.
@@ -147,23 +173,31 @@
               </p>
             </div>
           </div>
-          <div>
+          <div class="flex flex-col">
             <div>
-              <img src="./images/thesis-fisma.jpg" alt="">
-              <p>Fisma: Design and Prototype</p>
-              <p>Designer showcase of new prototype product</p>
+              <img src="./images/thesis-fisma.jpg" alt="" />
+              <div>
+                <h5>Fisma: Design and Prototype</h5>
+                <p>Designer showcase of new prototype product</p>
+              </div>
             </div>
             <div>
-              <img src="./images/thesis-now-and-then.jpg" alt="">
-              <p>Now and then</p>
-              <p>Research study about New York</p>
+              <img src="./images/thesis-now-and-then.jpg" alt="" />
+              <div>
+                <h5>Now and then</h5>
+                <p>Research study about New York</p>
+              </div>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
-    <footer class="mx-6 my-4">
+    <footer class="flex justify-between mx-6 mt-4 mb-12">
       <p>©2016 Colmar Academy. All rights reserved</p>
+      <div class="hidden sm:flex justify-between gap-x-4">
+        <span>Terms</span>
+        <span>Privacy</span>
+      </div>
     </footer>
   </body>
 </html>
