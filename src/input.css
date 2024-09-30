@@ -12,7 +12,7 @@
   }
 
   h1 {
-    @apply text-7xl font-bold;
+    @apply text-6xl font-bold;
   }
 
   h2 {
@@ -23,15 +23,41 @@
     @apply text-[2rem];
   }
 
+  p {
+    @apply text-2xl;
+  }
+
+  a {
+    @apply text-2xl hover:text-[#4A90E2];;
+  }
+
   img {
     @apply object-cover object-center bg-no-repeat;
   }
 
   button {
-    @apply bg-davy_gray text-white text-4xl py-2 transition-all hover:bg-davy_gray/80;
+    @apply bg-davy_gray text-white text-5xl py-2 transition-all hover:bg-davy_gray/80;
   }
 
   section {
-    @apply p-16;
+    @apply p-8;
+  }
+}
+
+@layer components {
+  #section2-container article {
+    @apply flex justify-between items-center p-4 gap-x-8 transition-all hover:bg-timber_wolf;
+  }
+
+  #section2-container img {
+    @apply w-[35%];
+  }
+
+  #section2-container div {
+    @apply w-[65%] flex flex-col content-evenly gap-y-4 pr-12;
+  }
+
+  #section2-container a {
+    @apply text-[#4A90E2];
   }
 }
