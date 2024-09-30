@@ -12,11 +12,11 @@
   }
 
   h1 {
-    @apply text-6xl font-bold;
+    @apply text-4xl  font-bold sm:text-6xl;
   }
 
   h2 {
-    @apply text-4xl font-semibold;
+    @apply text-2xl  font-semibold sm:text-4xl;
   }
 
   h4 {
@@ -24,7 +24,7 @@
   }
 
   p {
-    @apply text-2xl;
+    @apply text-lg sm:text-2xl;
   }
 
   span {
@@ -40,33 +40,50 @@
   }
 
   button {
-    @apply bg-davy_gray text-white text-5xl py-2 transition-all hover:bg-davy_gray/80;
+    @apply bg-davy_gray text-white text-2xl py-2 transition-all  sm:text-4xl hover:bg-[#9B9B9B];
   }
 
   section {
-    @apply px-6 py-8;
+    @apply py-8 sm:px-6;
   }
 }
 
 @layer components {
-  #section2-container article {
-    @apply flex justify-between items-center p-4 gap-x-8 transition-all hover:bg-timber_wolf;
+  nav span {
+    @apply hidden sm:block;
   }
 
-  #section2-container img {
-    @apply w-[35%] h-auto;
+  nav img {
+    @apply block sm:hidden h-12;
   }
+
+  #section2-container article {
+    @apply flex flex-col p-4  transition-all  sm:flex-row sm:justify-between sm:items-center sm:gap-x-8  
+    hover:bg-timber_wolf;
+  }
+
+  /* #section2-container img {
+    @apply w-[35%] h-auto;
+  } */
 
   #section2-container div {
-    @apply w-[65%] flex flex-col content-evenly gap-y-4 pr-12;
+    @apply flex flex-col content-evenly gap-y-4 py-4 px-4 sm:w-[65%] sm:p-y-0 sm:pr-12;
   }
 
   #section2-container a {
     @apply text-[#4A90E2];
   }
 
+  .s2__img-d {
+    @apply hidden  sm:w-[35%] sm:h-auto sm:block;
+  }
+
+  .s2__img-m {
+    @apply block sm:hidden;
+  }
+
   .s3__content-grid {
-    @apply bg-white hover:bg-timber_wolf;
+    @apply bg-white transition-all hover:bg-timber_wolf;
   }
 
   .s3__content-grid img {
@@ -87,7 +104,7 @@
   }
 
   .s4__content-grid {
-    @apply flex gap-x-4 p-4 hover:bg-timber_wolf;
+    @apply flex gap-x-4 p-4 transition-all hover:bg-timber_wolf;
   }
 
   .s4__content-grid div {
