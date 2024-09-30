@@ -62,7 +62,7 @@
   }
 
   #section2-container article {
-    @apply flex flex-col p-4  transition-all  sm:flex-row sm:justify-between sm:items-center sm:gap-x-8  
+    @apply flex flex-col p-4 transition-all  sm:flex-row sm:justify-between sm:items-center sm:gap-x-8  
     hover:bg-timber_wolf;
   }
 
@@ -87,7 +87,7 @@
   }
 
   .s3__content-grid {
-    @apply bg-timber_wolf w-[80dvw] transition-all sm:bg-white sm:w-auto hover:bg-timber_wolf/60;
+    @apply bg-timber_wolf w-[90dvw] transition-all sm:bg-white sm:w-auto hover:bg-timber_wolf/60;
   }
 
   .s3__content-grid img {
