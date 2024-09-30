@@ -65,25 +65,33 @@
     @apply text-[#4A90E2];
   }
 
-  .section3__content-grid {
+  .s3__content-grid {
     @apply bg-white hover:bg-timber_wolf;
   }
 
-  .section3__content-grid img {
+  .s3__content-grid img {
     @apply w-full h-auto;
   }
 
-  .section3__content-grid div {
+  .s3__content-grid div {
     @apply flex flex-col gap-y-2 px-4 pt-4 pb-6;
   }
 
-  .section3__content-grid span,
-  .section3__content-grid p {
+  .s3__content-grid span,
+  .s3__content-grid p {
     @apply text-battleship_gray;
   }
 
   #section4 p {
     @apply text-battleship_gray;
+  }
+
+  .s4__content-grid {
+    @apply flex gap-x-4 p-4 hover:bg-timber_wolf;
+  }
+
+  .s4__content-grid div {
+    @apply flex flex-col justify-center gap-y-4;
   }
 
   footer p,
