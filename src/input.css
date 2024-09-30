@@ -63,7 +63,7 @@
 
   #section2-container article {
     @apply flex flex-col p-4 transition-all  sm:flex-row sm:justify-between sm:items-center sm:gap-x-8  
-    hover:bg-timber_wolf;
+    hover:bg-timber_wolf hover:cursor-pointer;
   }
 
   /* #section2-container img {
@@ -87,7 +87,7 @@
   }
 
   .s3__content-grid {
-    @apply bg-timber_wolf w-[90dvw] transition-all sm:bg-white sm:w-auto hover:bg-timber_wolf/60;
+    @apply bg-timber_wolf w-[90dvw] transition-all sm:bg-white sm:w-auto hover:bg-timber_wolf/60 hover:cursor-pointer;
   }
 
   .s3__content-grid img {
@@ -108,7 +108,7 @@
   }
 
   .s4__content-grid {
-    @apply flex gap-x-4 p-4 transition-all hover:bg-timber_wolf;
+    @apply flex gap-x-4 p-4 transition-all hover:bg-timber_wolf hover:cursor-pointer;
   }
 
   .s4__content-grid div {
