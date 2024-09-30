@@ -4,14 +4,34 @@
 
 @layer base {
   * {
-    @apply box-border m-0 p-0;
+    @apply box-border m-0 p-0 text-davy_gray;
   }
 
   body {
-    @apply w-dvw min-h-dvh relative overflow-x-hidden;
+    @apply w-dvw min-h-dvh relative overflow-x-hidden font-mukta_light;
+  }
+
+  h1 {
+    @apply text-7xl font-bold;
+  }
+
+  h2 {
+    @apply text-4xl font-semibold;
+  }
+
+  h4 {
+    @apply text-[2rem];
   }
 
   img {
     @apply object-cover object-center bg-no-repeat;
+  }
+
+  button {
+    @apply bg-davy_gray text-white text-4xl py-2 transition-all hover:bg-davy_gray/80;
+  }
+
+  section {
+    @apply p-16;
   }
 }
