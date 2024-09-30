@@ -57,8 +57,8 @@
     @apply hidden sm:block;
   }
 
-  nav img {
-    @apply block sm:hidden h-12;
+  ul img {
+    @apply block h-12 sm:hidden;
   }
 
   #section2-container article {
@@ -87,7 +87,7 @@
   }
 
   .s3__content-grid {
-    @apply w-[80dvw] bg-white transition-all sm:w-auto hover:bg-timber_wolf;
+    @apply bg-timber_wolf w-[80dvw] transition-all sm:bg-white sm:w-auto hover:bg-timber_wolf/60;
   }
 
   .s3__content-grid img {
