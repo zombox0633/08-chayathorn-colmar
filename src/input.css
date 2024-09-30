@@ -32,7 +32,11 @@
   }
 
   a {
-    @apply text-2xl hover:text-[#4A90E2];
+    @apply text-2xl;
+  }
+
+  a span {
+    @apply hover:text-[#4A90E2];
   }
 
   img {
@@ -67,7 +71,7 @@
   } */
 
   #section2-container div {
-    @apply flex flex-col content-evenly gap-y-4 py-4 px-4 sm:w-[65%] sm:p-y-0 sm:pr-12;
+    @apply flex flex-col content-evenly gap-y-4 py-4 px-4 sm:w-[65%] sm:pr-12;
   }
 
   #section2-container a {
@@ -83,11 +87,11 @@
   }
 
   .s3__content-grid {
-    @apply bg-white transition-all hover:bg-timber_wolf;
+    @apply w-[80dvw] bg-white transition-all sm:w-auto hover:bg-timber_wolf;
   }
 
   .s3__content-grid img {
-    @apply w-full h-auto;
+    @apply hidden sm:w-full sm:h-auto sm:block;
   }
 
   .s3__content-grid div {
@@ -96,7 +100,7 @@
 
   .s3__content-grid span,
   .s3__content-grid p {
-    @apply text-battleship_gray;
+    @apply hidden text-battleship_gray sm:block;
   }
 
   #section4 p {
